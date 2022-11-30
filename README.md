@@ -46,7 +46,8 @@ npm test
 - handles root path
 - handles invalid requests
 - hanldes errors
+- handles validator input
 
 #### UML
 
-![UML](./class1lab.jpeg)
+![UML](./assets/class2.jpeg)
