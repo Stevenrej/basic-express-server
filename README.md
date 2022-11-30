@@ -10,9 +10,9 @@ Create a web server using CI and CD
 
 ### Links and Resources
 
-- [ci/cd](https://github.com/Stevenrej/server-deployment-practice/actions) (GitHub Actions)
-- [prod deployment](https://server-practice-prod.onrender.com/)
-- [dev deployment](https://server-practice-dev.onrender.com/)
+- [ci/cd](https://github.com/Stevenrej/basic-express-server/actions) (GitHub Actions)
+- [prod deployment](https://basic-express-server-prod-5hr5.onrender.com/)
+
 
 ### Setup
 
@@ -29,12 +29,12 @@ see `.env.sample`
 
 #### Features / Routes
 
-- Feature One: Deploy to Dev
+
+- Feature One: Deploy to Prod
 - GET : `/`
 - GET : `/bad`
-- Feature Two: Deploy to Prod
-- GET : `/hello`
-- GET : `/bad`
+- GET : `/helloPath/:individual`
+- GET : `/person`
 
 
 
@@ -46,7 +46,8 @@ npm test
 - handles root path
 - handles invalid requests
 - hanldes errors
+- handles validator input
 
 #### UML
 
-![UML](./class1lab.jpeg)
+![UML](./assets/class2.jpeg)
