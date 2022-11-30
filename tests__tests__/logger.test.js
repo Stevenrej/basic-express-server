@@ -2,7 +2,7 @@
 
 const logger = require('../src/middleware/logger.js');
 
-describe('LOgger middleware', () => {
+describe('Logger middleware', () => {
   let consoleSpy;
   let req = {};
   let res = {};
@@ -24,6 +24,12 @@ describe('LOgger middleware', () => {
   it('logs as expected', () => {
     logger(req, res, next);
     expect(consoleSpy).toHaveBeenCalledWith('logged at', req.timestamp);
+  });
+
+  it('call next as expected', () => {
+    logger(req, res, next);
+    expect(next).toHaveBeenCalledWith();
+    expect(next).not.toHaveBeenCalledWith('this should not work');
   });
 });
 
